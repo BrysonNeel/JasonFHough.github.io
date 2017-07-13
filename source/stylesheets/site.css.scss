@@ -1,4 +1,6 @@
+//--------------Global styling---------------
 a {
+  //removes hyperlink blue text and underlines
   color: inherit;
   text-decoration: inherit;
 }
@@ -10,32 +12,36 @@ a {
 }
 
 body {
-  background-color: black;
+  //background-color: #f2f2f2;
+  font-family: 'Playfair Display SC', serif;
 }
 
-//-----------------------------
+//--------------Heading styling---------------
 
 .heading {
-  //background-color: gray;
-}
-
-.heading-picture {
-
 }
 
 .heading-name {
-  text-align: center;
+  h1{
+      text-align: center;
+      font-size: 81px;
+  }
 }
 
 .heading-content {
+  h2 {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   text-align: center;
 }
 
-//-----------------------------
+//--------------About styling---------------
 
 .about {
-  //background-color: pink;
-  background-color: gray;
+  background-color: #f2f2f2;
 }
 
 .about-title {
@@ -46,10 +52,9 @@ body {
   text-align: center;
 }
 
-//-----------------------------
+//--------------Interests styling---------------
 
 .interest {
-  //background-color: blue;
 }
 
 .interest-title {
@@ -60,11 +65,10 @@ body {
   text-align: center;
 }
 
-//-----------------------------
+//--------------Projects styling---------------
 
 .project {
-  //background-color: green;
-  background-color: gray;
+  background-color: #f2f2f2;
 }
 
 .project-title {
@@ -75,10 +79,9 @@ body {
   text-align: center;
 }
 
-//-----------------------------
+//--------------Footer styling---------------
 
 .footing {
-  //background-color: red;
 }
 
 .ad {
