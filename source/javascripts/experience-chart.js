@@ -25,6 +25,13 @@ $(document).ready(function(){
   };
 
   var options = {
+
+    deferred: {           // enabled by default
+        xOffset: 150,     // defer until 150px of the canvas width are inside the viewport
+        yOffset: '30%',   // defer until 50% of the canvas height are inside the viewport
+        delay: 500        // delay of 500 ms after the canvas is considered inside the viewport
+    },
+
     legend: {
       display: false
     },
@@ -46,7 +53,7 @@ $(document).ready(function(){
             'margin-right': '10px',
             'background': chart.data.datasets[0].backgroundColor[i]
           });
-          
+
           text.push('<span>');
 
           if (chart.data.labels[i]) {
@@ -82,5 +89,7 @@ $(document).ready(function(){
 
   //Generates the legend
   $("#pie-legend").html(experienceChart.generateLegend());
+
+
 
 });
