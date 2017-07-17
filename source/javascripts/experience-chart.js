@@ -1,22 +1,20 @@
 $(document).ready(function(){
   var data = {
-    labels: ["", "Unity", "C#", "Java", "HTML, CSS, Bootstrap", "Ruby", "Swift"],
+    labels: ["", "Unity with C#", "Java", "Web Development", "Ruby", "Swift"],
 
     datasets: [{
-      data: [0, 30, 20, 25, 15, 5, 5],
+      data: [0, 30, 25, 15, 5, 5],
       backgroundColor: [
         'rgba(0, 0, 0, 0)', //filler
-        'rgba(0, 0, 0, 1)', //Unity
-        'rgba(0, 80, 209, 1)',  //C#
+        'rgba(0, 0, 0, 1)', //Unity, C#
         'rgba(175, 0, 90, 1)',  //Java
-        'rgba(0, 150, 2, 1)', //HTML, CSS, Bootstrap
+        'rgba(0, 150, 2, 1)', //Web Dev
         'rgba(209, 0, 0, 1)', //Ruby
         'rgba(255, 165, 0, 1)'  //Swift
       ],
       borderColor: [
         'rgba(0, 0, 0, 0)', //filler
         'rgba(0, 0, 0, 1)',
-        'rgba(0, 80, 209, 1)',
         'rgba(175, 0, 90, 1)',
         'rgba(0, 150, 2, 1)',
         'rgba(209, 0, 0, 1)',
@@ -48,8 +46,7 @@ $(document).ready(function(){
             'margin-right': '10px',
             'background': chart.data.datasets[0].backgroundColor[i]
           });
-
-          //text.push('<span style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '">');
+          
           text.push('<span>');
 
           if (chart.data.labels[i]) {
@@ -61,38 +58,29 @@ $(document).ready(function(){
       }
       text.push('</ul>');
       return text.join("");
-    }/*,
+    },
 
     tooltips: {
-      custom: function(tooltip) {
-        //tooltip.x = 0;
-        //tooltip.y = 0;
-      },
+      enabled: true,
       mode: 'single',
       callbacks: {
         label: function(tooltipItems, data) {
-          var sum = data.datasets[0].data.reduce(add, 0);
-          function add(a, b) {
-            return a + b;
-          }
-
-          return parseInt((data.datasets[0].data[tooltipItems.index] / sum * 100), 10) + '%';
+          return  data.labels[tooltipItems.index] + ': ' + data.datasets[tooltipItems.datasetIndex].data[tooltipItems.index] + '%';
         }
       }
     }
-    */
 
   }
 
   //Constructs the chart
-  var ctx = document.getElementById('interestsChart');
-  var interestsChart = new Chart(ctx, {
+  var ctx = document.getElementById('experienceChart');
+  var experienceChart = new Chart(ctx, {
     type: 'pie',
     data: data,
     options: options
   });
 
   //Generates the legend
-  $("#pie-legend").html(interestsChart.generateLegend());
+  $("#pie-legend").html(experienceChart.generateLegend());
 
 });

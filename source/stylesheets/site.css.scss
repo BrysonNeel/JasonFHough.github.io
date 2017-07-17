@@ -14,19 +14,11 @@ body {
   font-family: 'Playfair Display SC', serif;
 }
 
-canvas {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 800px;
+.row-color {
+  background-color: #f2f2f2;
 }
 
 //--------------Heading styling---------------
-
-.heading {
-}
 
 .heading-name {
   h1{
@@ -47,10 +39,6 @@ canvas {
 
 //--------------About styling---------------
 
-.about {
-  background-color: #f2f2f2;
-}
-
 .about-title {
   text-align: center;
 }
@@ -61,16 +49,23 @@ canvas {
 
 //--------------Interests styling---------------
 
-.interest {
-}
-
-.interest-title {
+.experience-title {
   text-align: center;
 }
 
-.interest-content {
+.experience-content {
   text-align: center;
   display:inline
+
+  canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+  }
+
 }
 
 #pie-legend {
