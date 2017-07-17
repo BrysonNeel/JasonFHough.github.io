@@ -1,12 +1,22 @@
 ---
 title: Jason Hough
 ---
-<div class="row-color">
+<%= partial 'partials/head' %>
+
+<%= partial 'partials/header' %>
+
+<div class="colored-row">
   <%= partial 'partials/about' %>
 </div>
 
-<%= partial 'partials/experience' %>
+<%= partial 'partials/quotes' %>
 
-<div class="row-color">
-  <%= partial 'partials/projects' %>
+<div class="colored-row">
+  <%= partial 'partials/experience' %>
+</div>
+
+<%= partial 'partials/projects' %>
+
+<div class="colored-row">
+  <%= partial 'partials/footer' %>
 </div>

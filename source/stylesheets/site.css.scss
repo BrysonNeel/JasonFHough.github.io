@@ -14,8 +14,11 @@ body {
   font-family: 'Playfair Display SC', serif;
 }
 
-.row-color {
+.colored-row {
   background-color: #f2f2f2;
+}
+.row-title {
+  text-align: center;
 }
 
 //--------------Heading styling---------------
@@ -37,21 +40,24 @@ body {
   text-align: center;
 }
 
-//--------------About styling---------------
-
-.about-title {
-  text-align: center;
-}
+//----------------About styling-----------------
 
 .about-content {
   text-align: center;
 }
 
-//--------------Interests styling---------------
+//---------------Quotes styling-----------------
 
-.experience-title {
+.quotes {
+  h1 {
+    font-style: italic;
+  }
+
   text-align: center;
 }
+
+
+//--------------Interests styling---------------
 
 .experience-content {
   text-align: center;
@@ -81,22 +87,11 @@ body {
 
 //--------------Projects styling---------------
 
-.project {
-  background-color: #f2f2f2;
-}
-
-.project-title {
-  text-align: center;
-}
-
 .project-content {
   text-align: center;
 }
 
 //--------------Footer styling---------------
-
-.footing {
-}
 
 .ad {
   text-align: center;
