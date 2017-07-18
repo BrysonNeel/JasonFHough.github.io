@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     datasets: [{
       data: [0, 30, 25, 15, 5, 5],
-      backgroundColor: [
+      /*backgroundColor: [
         'rgba(0, 0, 0, 0)', //filler
         'rgba(0, 0, 0, 1)', //Unity, C#
         'rgba(175, 0, 90, 1)',  //Java
@@ -19,6 +19,23 @@ $(document).ready(function(){
         'rgba(0, 150, 2, 1)',
         'rgba(209, 0, 0, 1)',
         'rgba(255, 165, 0, 1)'
+      ],*/
+
+      backgroundColor: [
+        'rgba(0, 0, 0, 0)', //filler
+        'rgba(20, 20, 20, 1)', //Unity, C#
+        'rgba(70, 70, 70, 1)',  //Java
+        'rgba(132, 132, 132, 1)', //Web Dev
+        'rgba(163, 163, 163, 1)', //Ruby
+        'rgba(193, 193, 193, 1)'  //Swift
+      ],
+      borderColor: [
+        'rgba(0, 0, 0, 0)', //filler
+        'rgba(234, 234, 234, 1)',
+        'rgba(234, 234, 234, 1)',
+        'rgba(234, 234, 234, 1)',
+        'rgba(234, 234, 234, 1)',
+        'rgba(234, 234, 234, 1)'
       ],
       borderWidth: 1
     }]
@@ -28,8 +45,12 @@ $(document).ready(function(){
 
     deferred: {           // enabled by default
         xOffset: 150,     // defer until 150px of the canvas width are inside the viewport
-        yOffset: '30%',   // defer until 50% of the canvas height are inside the viewport
+        yOffset: '40%',   // defer until 50% of the canvas height are inside the viewport
         delay: 500        // delay of 500 ms after the canvas is considered inside the viewport
+    },
+
+    animation: {
+      duration: 1750
     },
 
     legend: {
