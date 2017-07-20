@@ -1,10 +1,10 @@
-$(window).on("load",function() {
-
-  //Fading between divs on scroll
+var min = .5; //Keep this variable public for toggleDarkLight to access it
+function scrollingFade () { //The scrolling fade is in a function of its own to call it on page load, and when switching dark/light mode
+  /* Fading between divs on scroll */
   $(window).scroll(function(){fade(true);});
   function fade(pageLoad) {
     var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
-    var min=0.5, max=1, threshold=0.01;
+    var max=1, threshold=0.01;
 
     $(".fade").each(function() {
       /* Check the location of each desired element */
@@ -21,4 +21,28 @@ $(window).on("load",function() {
     });
   } fade(true); //fade elements on page-load
   $(window).scroll(function(){fade(false);}); //fade elements on scroll
+}
+
+$(window).on("load",function() {
+  scrollingFade();
 });
+
+/* Dark Mode Toggle */
+function toggleDarkLight() {
+  //Change the CSS styling
+  var coloredRow = document.getElementById("body");
+  var currentClass = coloredRow.className;
+  coloredRow.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+
+  //Changes the button's text to reflect the mode change
+  if (currentClass == "dark-mode") {
+    buttonText = "Switch to Dark Mode";
+    min = .5;
+    scrollingFade();
+  } else {
+    buttonText = "Switch to Light Mode";
+    min = .9;
+    scrollingFade();
+  }
+  document.getElementById("dark_light").innerText = buttonText;
+}

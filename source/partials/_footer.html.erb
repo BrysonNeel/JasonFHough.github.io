@@ -13,9 +13,26 @@
               <p class="why-ads">Why are ads placed on this portfolio website?</p>
             </div>
             <div class="col-sm-4">
-              <h5 class="legal-content">Copyright &copy <%= Date.today.year %> Jason Hough </h5>
-              <p id="updated-text">Updated: 7/<%= Date.today.day %>/17</p>
-              <p id="created-with-text">Created with the Middleman Framework</p>
+
+              <div class="row" style="padding-top:25px; padding-bottom:40px;">
+                <div class="col-sm-12 text-center">
+                  <button type="button"
+                          name="dark_light"
+                          onclick="toggleDarkLight()"
+                          title="Toggle dark/light mode"
+                          class="btn btn-secondary btn-lg"
+                          id="dark_light">
+                          Switch to Dark Mode
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="legal-content">Copyright &copy <%= Date.today.year %> Jason Hough </h5>
+                <p id="updated-text">Up to date as of: <%= Date.today.month %>/<%= Date.today.day %>/<%= Date.today.year %></p>
+                <p id="created-with-text">Created with the Middleman Framework</p>
+              </div>
+
             </div>
             <div class="col-sm-2">
               <div class="ad">
