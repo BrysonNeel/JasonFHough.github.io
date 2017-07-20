@@ -1,4 +1,4 @@
-var min = .5; //Keep this variable public for toggleDarkLight to access it
+var min = .75; //Keep this variable public for toggleDarkLight to access it
 function scrollingFade () { //The scrolling fade is in a function of its own to call it on page load, and when switching dark/light mode
   /* Fading between divs on scroll */
   $(window).scroll(function(){fade(true);});
@@ -38,7 +38,7 @@ function toggleDarkLight() {
   //Changes the button's text to reflect the mode change
   if (currentClass == "dark-mode") {
     buttonText = "Switch to Dark Mode";
-    min = .5;
+    min = .75;
     scrollingFade();
   } else {
     buttonText = "Switch to Light Mode";
