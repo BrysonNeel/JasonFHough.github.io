@@ -24,6 +24,7 @@ function scrollingFade () { //The scrolling fade is in a function of its own to 
 }
 
 $(window).on("load",function() {
+  (adsbygoogle = window.adsbygoogle || []).push({});
   scrollingFade();
 });
 

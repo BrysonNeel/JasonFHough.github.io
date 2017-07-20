@@ -1,7 +1,8 @@
 //--------------Global styling---------------
 
 .fade {
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   opacity: 1;
 }
 
@@ -114,11 +115,12 @@ body.light-mode {
   text-align: center;
 }
 
-//--------------Interests styling---------------
+//--------------Experience styling---------------
 
 .experience-content {
   text-align: center;
   display:inline;
+  //padding-left: 13%;
 
   canvas {
     padding-left: 0;
@@ -173,4 +175,5 @@ body.light-mode {
 .why-ads {
   text-align: center;
   font-size: 12px;
+  padding-top: 25px;
 }

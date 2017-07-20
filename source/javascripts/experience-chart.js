@@ -3,7 +3,7 @@ $(document).ready(function(){
     labels: ["", "Unity with C#", "Java", "Web Development", "Ruby", "Swift"],
 
     datasets: [{
-      data: [0, 35, 30, 15, 5, 5],
+      data: [0, 35, 30, 20, 5, 10],
       /*backgroundColor: [
         'rgba(0, 0, 0, 0)', //filler
         'rgba(0, 0, 0, 1)', //Unity, C#
