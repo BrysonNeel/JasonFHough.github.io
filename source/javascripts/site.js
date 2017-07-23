@@ -1,12 +1,12 @@
 var min = .75; //Keep this variable public for toggleDarkLight to access it
 function scrollingFade () { //The scrolling fade is in a function of its own to call it on page load, and when switching dark/light mode
   /* Fading between divs on scroll */
-  $(window).scroll(function(){fade(true);});
-  function fade(pageLoad) {
+  $(window).scroll(function(){fading(true);});
+  function fading(pageLoad) {
     var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
     var max=1, threshold=0.01;
 
-    $(".fade").each(function() {
+    $(".fading").each(function() {
       /* Check the location of each desired element */
       var objectHeight=$(this).outerHeight(), objectTop=$(this).offset().top, objectBottom=$(this).offset().top+objectHeight;
 
@@ -19,8 +19,8 @@ function scrollingFade () { //The scrolling fade is in a function of its own to 
         else if ($(this).css("opacity")>=min+threshold || pageLoad) {$(this).fadeTo(0,min);}
       } else if ($(this).css("opacity")<=max-threshold || pageLoad) {$(this).fadeTo(0,max);}
     });
-  } fade(true); //fade elements on page-load
-  $(window).scroll(function(){fade(false);}); //fade elements on scroll
+  } fading(true); //fade elements on page-load
+  $(window).scroll(function(){fading(false);}); //fade elements on scroll
 }
 
 $(window).on("load",function() {

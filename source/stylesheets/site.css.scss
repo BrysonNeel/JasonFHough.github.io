@@ -1,6 +1,6 @@
 //--------------Global styling---------------
 
-.fade {
+.fading {
   padding-top: 50px;
   padding-bottom: 50px;
   opacity: 1;
@@ -57,6 +57,9 @@ body.dark-mode {
     background-color: #3d3d3d;
   }
 
+  .modal-content {
+    background-image: url("/images/Gradient Dark Mode Row-Color.svg");
+  }
 }
 
 body.light-mode {
@@ -81,8 +84,12 @@ body.light-mode {
     background-color: inherit;
     border-color: inherit;
   }
-  .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:active:focus, .open>.dropdown-toggle.btn-secondary {
+  .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:active:focus, .open>.dropdown-toggle.btn-secondary, {
     background-color: #e5e5e5;
+  }
+
+  .modal-content {
+    background-image: url("/images/Gradient Light Mode Row-Color.svg");
   }
 
 }
@@ -179,7 +186,10 @@ body.light-mode {
 }
 
 .why-ads {
-  text-align: center;
-  font-size: 12px;
-  padding-top: 25px;
+  a {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 25px;
+  }
+
 }

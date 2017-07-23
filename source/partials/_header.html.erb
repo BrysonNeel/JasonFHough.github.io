@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row fade alt-row">
+  <div class="row fading alt-row">
 
     <div class="col-sm-12">
       <div class="row heading-name">
@@ -10,9 +10,65 @@
 
       <div class="row heading-content">
         <div class="col">
-          <a href="https://github.com/SIRmisterD"> <h2>Github</h2> </a>
-          <a href="https://www.linkedin.com/in/jason-hough/"> <h2>LinkedIn</h2> </a>
+          <a href="#"
+            data-toggle="modal"
+            data-target="#githubModal">
+            <h2>Github</h2>
+          </a>
+          <a href="#"
+            data-toggle="modal"
+            data-target="#linkedinModal">
+            <h2>LinkedIn</h2>
+          </a>
           <a href="mailto:jasonhough0@gmail.com"> <h2>Email</h2> </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="githubModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg colored-row">
+        <div class="modal-content">
+          <div class="modal-header" style="border-style:none;">
+            <h4 class="modal-title" id="myModalLabel">Notice</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="border-style:none;">
+            <p>
+              You are about to leave the current page to go a GitHub profile. Would you like to continue?
+            </p>
+          </div>
+          <div class="modal-footer" style="border-style:none;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="https://github.com/SIRmisterD">
+              <button type="button" class="btn btn-primary">Continue</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="linkedinModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg colored-row">
+        <div class="modal-content">
+          <div class="modal-header" style="border-style:none;">
+            <h4 class="modal-title" id="myModalLabel">Notice</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="border-style:none;">
+            <p>
+              You are about to leave the current page to go a LinkedIn profile. Would you like to continue?
+            </p>
+          </div>
+          <div class="modal-footer" style="border-style:none;">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <a href="https://www.linkedin.com/in/jason-hough/">
+              <button type="button" class="btn btn-primary">Continue</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
