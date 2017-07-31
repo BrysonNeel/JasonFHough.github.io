@@ -20,7 +20,6 @@ $(document).ready(function(){
         'rgba(209, 0, 0, 1)',
         'rgba(255, 165, 0, 1)'
       ],*/
-
       backgroundColor: [
         'rgba(0, 0, 0, 0)', //filler
         'rgba(20, 20, 20, 1)', //Unity, C#
@@ -45,7 +44,7 @@ $(document).ready(function(){
 
     deferred: {           // enabled by default
         xOffset: 150,     // defer until 150px of the canvas width are inside the viewport
-        yOffset: '40%',   // defer until 50% of the canvas height are inside the viewport
+        yOffset: '65%',   // defer until 65% of the canvas height are inside the viewport
         delay: 500        // delay of 500 ms after the canvas is considered inside the viewport
     },
 

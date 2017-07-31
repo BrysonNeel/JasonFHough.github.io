@@ -34,13 +34,9 @@ body.dark-mode {
   color: white; //font color
 
   .colored-row {
-    //background-color: #3b3b44;
-    //background-color: #444444;
     background-image: url("/images/Gradient Dark Mode Row-Color.svg");
   }
   .alt-row {
-    //background-color: #4c4c56;
-    //background-color: #595959;
     background-image: url("/images/Gradient Dark Mode Alt-Color.svg");
   }
 
@@ -67,7 +63,6 @@ body.light-mode {
   color: rgb(41, 43, 44); //font color
 
   .colored-row {
-    //background-color: #f2f2f2;
     background-image: url("/images/Gradient Light Mode Row-Color.svg");
   }
 
