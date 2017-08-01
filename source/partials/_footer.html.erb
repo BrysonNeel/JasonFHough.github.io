@@ -1,0 +1,85 @@
+      <footer>
+        <div class="row align-items-center justify-content-around fading colored-row">
+          <div class="col-sm-4">
+            <div class="ad">
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-5147211959576213"
+                   data-ad-slot="2559944625"
+                   data-ad-format="rectangle, horizontal">
+              </ins>
+            </div>
+            <div style="text-align:center;">
+              <a href="#" class="why-ads"
+                data-toggle="modal"
+                data-target="#basicModal">
+                Why are ads placed on this portfolio website?
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+
+            <div class="row" style="padding-top:25px; padding-bottom:40px;">
+              <div class="col-sm-12 text-center">
+                <button type="button"
+                        name="dark_light"
+                        onclick="toggleDarkLight()"
+                        title="Toggle dark/light mode"
+                        class="btn btn-secondary btn-lg"
+                        id="dark_light">
+                        Switch to Dark Mode
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="legal-content">Copyright &copy <%= Date.today.year %> Jason Hough </h5>
+              <p id="updated-text">Up to date as of: <%= Date.today.month %>/<%= Date.today.day %>/<%= Date.today.year %></p>
+              <p id="created-with-text">Created with the Middleman Framework</p>
+            </div>
+
+          </div>
+          <div class="col-sm-4">
+            <div class="ad">
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-5147211959576213"
+                   data-ad-slot="2559944625"
+                   data-ad-format="rectangle, horizontal">
+              </ins>
+            </div>
+            <div style="text-align:center;">
+              <a href="#" class="why-ads"
+                data-toggle="modal"
+                data-target="#basicModal">
+                Why are ads placed on this portfolio website?
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg colored-row">
+          <div class="modal-content">
+            <div class="modal-header" style="border-style:none;">
+              <h4 class="modal-title" id="myModalLabel">Why are ads placed on this portfolio website?</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="border-style:none;">
+              <p>
+                Good question. My answer to you is simple: The only reason I have implemented ads is to cover the cost of the website domain as best as possible. I absolutely do not have <strong>any</strong> intention of profiting from this project. My only intention for this portfolio website is for it to simply display a quick overview of myself.
+              </p>
+            </div>
+            <div class="modal-footer" style="border-style:none;">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>  <!-- /.container-fluid -->
+  </body>
+</html>
